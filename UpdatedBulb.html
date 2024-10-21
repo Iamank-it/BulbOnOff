@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulbonoff</title>
+</head>
+<style>
+  *{
+    background-color: black;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bulb{
+    padding: 40px;
+  }
+  button{
+    background-color: aliceblue;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+  }
+  input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    background-color:white;
+    width: 50%;
+    cursor: pointer;
+  }
+  input:focus{
+    outline: none;
+  }
+  </style>
+<body>
+  <main>
+  <img src="image/Off.jpg" id="bulb">
+  <div>
+    <button onclick="
+    if(x==1){
+      document.getElementById('bulb').src='image/On.jpg';
+      x=0;
+      document.getElementById('text').value='Off';
+    }
+    else{
+      document.getElementById('bulb').src='image/Off.jpg';
+      x=1;
+      document.getElementById('text').value='On';
+    }
+    "><input type="text" value="On" id="text" readonly></button>
+  </div>
+  </main>
+  <script>
+    var x=1; 
+  </script>
+</body>
+</html>
