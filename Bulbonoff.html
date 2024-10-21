@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulbonoff</title>
+</head>
+<style>
+  *{
+    background-color: black;
+  }
+  main{
+    display: flex;
+    align-items: center; 
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bulb{
+    padding: 40px;
+  }
+  button{
+    background-color: aliceblue;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div>
+  <main>
+  <button onclick="document.getElementById('bulb').src='image/On.jpg'">On</button>
+  <img src="image/Off.jpg" id="bulb">
+  <button onclick="document.getElementById('bulb').src='image/Off.jpg'">Off</button>
+  </main>
+  </div>
+</body>
+</html>
